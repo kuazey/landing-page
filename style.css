@@ -4,7 +4,7 @@
 
 .hero{
     color: white;
-    background-color: #1f2937;
+    background-color: black;
 }
 
 .container {
@@ -55,8 +55,8 @@ a {
 }
 .btn {
     display: inline-block;
-    background-color: #3b82f6;
-    color: white;
+    background-color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 18px;
@@ -66,9 +66,164 @@ a {
 
 .placeholder-img img {
     max-width: 100%;
-    width: 1200px;  
+    width: 1500px;  
     height: auto;  
     display: block; 
     margin-bottom: 40px;
     border-radius: 15px; 
+}
+.section h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    align-items: center;
+
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 100px;
+
+}
+.images img {
+    max-width: 250px;
+    margin-top: -110px;
+    padding-top: 70px;
+    
+}
+
+.quote  h3 {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    justify-content: space-around;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
+    
+}
+
+
+.quote h5 {
+    display: flex;
+    font-size: 20px;
+    justify-content: end;
+    margin-top: -60px;
+    margin-bottom: 150px;
+}
+
+.calltoac {
+    background-color: black;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 40px 50px;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+.calltoac-text {
+    display: flex;
+    flex-direction: column; 
+   
+}
+
+.calltoac h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.calltoac h5 {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.calltoac .btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.calltoac-text h3, 
+.calltoac-text h5 {
+    margin: 0; 
+    padding: 0;
+}
+
+
+.copy {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .header-text h1 {
+        font-size: 35px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .placeholder-img img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .quote h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .quote h5 {
+        justify-content: center;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .calltoac {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .calltoac .btn {
+        margin-top: 10px;
+    }
 }
